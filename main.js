@@ -1,5 +1,8 @@
 function clickbox() {
   document.getElementById("count").value = getScores();
+
+  HasEmptyRequiredInput();
+  
   return false;
 }
 
@@ -20,4 +23,17 @@ function getScores() {
     score += answer.getScore();
   });
   return score;
+}
+
+function HasEmptyRequiredInput() {
+  var personInfos = ["className","studentNumber","studentName"];
+  var information = ["班级","学号","姓名"];
+
+  for (var i = 0; i < personInfos.length; i++) {
+    var personInfo = document.getElementById(personInfos[i]).value;
+
+    if (personInfo === "") {
+      alert("请输入:" + information[i] + "!");
+    }
+  }
 }
