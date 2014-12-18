@@ -1,7 +1,6 @@
-function Question(identifier, answer, defaultScore) {
+function Question(answer,identifier) {
   this.identifier = identifier;
   this.answer = answer;
-  this.defaultScore = defaultScore;
 }
 
 Question.prototype.getScore = function() {
