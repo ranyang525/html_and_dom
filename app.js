@@ -1,10 +1,11 @@
 function clickbox() {
   var garde = 0;
 
+  validate();
+
   garde += getCompletion('统一建模语言','1_1');
-  garde += getCompletion('封装性','1_2_1');
-  garde += getCompletion('继承性','1_2_2');
-  garde += getCompletion('多态性','1_2_3');
+
+  garde += getFillScore(['封装性','继承性','多态性'],['1_2_1','1_2_2','1_2_3']);
 
   garde += getsingle('B','2_1');
   garde += getsingle('A','2_2');
@@ -19,12 +20,37 @@ function clickbox() {
 
   document.getElementById("count").value = garde;
 
+  return false;
+
+}
+
+function validate() {
+  if (document.getElementById("class").value === '') {
+    alert("班级不能为空");
+  }
 }
 
 function getCompletion(answer,id) {
   var garde = 0;
   if (answer === document.getElementById(id).value) {
     garde = 5;
+  }
+  return garde;
+}
+
+function getFillScore(answer, id) {
+  var garde = 0;
+  var inputAnwsers = [];
+  for (var j = 0; j < answer.length; j++) {
+    var inputAnwser = _.contains(inputAnwsers, document.getElementById(answer[j]).value);
+    if(!inputAnwser) {
+      inputAnwsers.push(document.getElementById(answer[j]).value);
+    }
+  }
+  for (var i = 0; i < inputAnwsers.length; i++) {
+    if(_.contains(id, inputAnwsers[i])) {
+      garde += 5;
+    }
   }
   return garde;
 }
