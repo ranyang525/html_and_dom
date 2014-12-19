@@ -21,28 +21,28 @@
 
       <label class="col-sm-1 control-label">科目：</label>
       <div class="col-sm-3">
-        <input type="text"  value="统一建模语言 UML">
+        <input type="text"  class="form-control" value="统一建模语言 UML">
       </div>
       <label class="col-sm-1 control-label">时间：</label>
       <div class="col-sm-3">
-        <input type="text"  value="100 分钟">
+        <input type="text" class="form-control" value="100 分钟">
       </div>
       <label class="col-sm-1 control-label">得分：</label>
       <div class="col-sm-3">
-        <input type="text" name="garde" id="count">
+        <input type="text" class="form-control" name="garde" id="count">
       </div><br><br>
 
       <label for="inputPassword" class="col-sm-1 control-label">班级：</label>
       <div class="col-sm-3">
-        <input type="text" class="form-control" id="className" placeholder="Enter class">
+        <input type="text" class="form-control" id="className" placeholder="请输入班级">
       </div>
       <label for="inputPassword" class="col-sm-1 control-label">学号：</label>
       <div class="col-sm-3">
-        <input type="text" class="form-control" id="studentNumber" placeholder="Enter student number">
+        <input type="text" class="form-control" id="studentNumber" placeholder="请输入学号">
       </div>
       <label for="inputPassword" class="col-sm-1 control-label">姓名：</label>
       <div class="col-sm-3">
-        <input type="text" class="form-control" id="studentName" placeholder="Enter name">
+        <input type="text" class="form-control" id="studentName" placeholder="请输入姓名">
       </div><br><br>
       <h3>一、填空题（每空 5 分，共 20 分）</h3>
         <table class="table table-bordered">
@@ -85,17 +85,21 @@
       </ol>
       <h3>四、判断题（每题 10 分，共 20 分）</h3>
       <ol>
-        <li>用例图只是用于和客户交流和沟通的，用于确定需求。Yes<input type="radio" name="4_1" value="yes" />
-                                                     No<input type="radio" name="4_1" value="no" />
+        <h4><li>用例图只是用于和客户交流和沟通的，用于确定需求。Yes<input type="radio" name="4_1" value="yes" />
+                                                     No<input type="radio" name="4_1" value="no" /></h4>
         </li>
-        <li>在状态图中，终止状态在一个状态图中允许有任意多个。Yes<input type="radio" name="4_2" value="yes" />
-                                                       No<input type="radio" name="4_2" value="no" />
+        <h4><li>在状态图中，终止状态在一个状态图中允许有任意多个。Yes<input type="radio" name="4_2" value="yes" />
+                                                       No<input type="radio" name="4_2" value="no" /></h4>
           </li>
       </ol>
       <h3>五、简答题（每题 20 分，共 20 分）</h3>
-      1． 简述什么是模型以及模型的表现形式?<br/>
-      <textarea cols="30" rows="5" id='5_1'></textarea><br/>
-      <button type="submit" class="btn btn-danger" onclick="return clickbox()">提交</button>
+      <ol>
+        <h4><li>简述什么是模型以及模型的表现形式?<br/></h4>
+          <textarea cols="50" rows="5" id='5_1'></textarea></li>
+      </ol>
+      <div class="text-center">
+        <button type="submit" class="btn btn-danger" onclick="return clickbox()">提交</button>
+      </div>
     </div>
   </body>
 </html>
