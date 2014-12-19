@@ -11,32 +11,32 @@
     <script type="text/javascript" src="lib/lodash-2.4.1/lodash.js"></script>
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/main.css" type="text/css"> -->
     <link rel="stylesheet" href="lib/dist/css/bootstrap.min.css" charset="utf-8">
 
   </head>
   <body>
+    <div class="col-md-8 col-md-offset-2">
     <form name="myform" method="post" autocomplete="off">
-      <h1>统一建模语言理论测试</h1>
-      <table>
+      <h1 class="text-center">统一建模语言理论测试</h1>
+      <table class="table table-hover">
       <tr>
         <td>考试科目：<input type="text"  value="统一建模语言 UML"></td>
         <td>时间：<input type="text"  value="100 分钟"></td>
         <td>得分：<input type="text" name="garde" id="count"></td>
       </tr>
       <tr>
-        <td>班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级：<input type="text" id="className"></td>
-        <td>学号：<input type="text" id="studentNumber"></td>
-        <td>姓名：<input type="text" id="studentName"></td>
+        <td>班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级：<input type="text" id="className" placeholder="Enter class"></td>
+        <td>学号：<input type="text" id="studentNumber" placeholder="Enter student number"></td>
+        <td>姓名：<input type="text" id="studentName" placeholder="Enter name"></td>
       </tr>
     </table>
-        <table>
+        <table class="table table-hover">
           <tr><td><h3>一、填空题（每空 5 分，共 20 分）</h3></td></tr>
           <tr><td>1. UML 的中文全称是：<input type="text" name="1_1">。</td></tr>
           <tr><td>2. 对象最突出的特征是：<input type="text" name="1_2" id="1_2_1">、<input type="text" name="1_2" id="1_2_2">、<input type="text" name="1_2" id="1_2_3">。</td></tr>
         </table>
           <p>
-        <div class="main">
           <h3>二、选择题（每题 10 分，共 20 分）</h3>
           1．UML 与软件工程的关系是：<br>
           <input type="radio" name="2_1" value="A" />(A)UML 就是软件工程<br/>
