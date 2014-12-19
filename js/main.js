@@ -1,7 +1,8 @@
 function clickbox() {
-  document.getElementById("count").value = getScores();
 
   HasEmptyRequiredInput();
+
+  document.getElementById("count").value = getScores();
 
   return false;
 }
