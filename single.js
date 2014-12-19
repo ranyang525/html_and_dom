@@ -7,6 +7,7 @@ Single.prototype = Object.create(Question.prototype);
 Single.prototype.constructor = Single;
 
 Single.prototype.getScore = function() {
+  
   var score = 0;
   var single = document.getElementsByName(this.identifier);
   for (var i = 0; i < single.length; i++) {

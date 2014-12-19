@@ -1,4 +1,11 @@
-table { margin:0px auto }
+table {
+  margin:0px auto;
+  height:100px;
+  width:800px;
+  cellpadding:100px;
+  cellspacing:100px;
+
+}
 /*td { text-align:left }*/
 
 h1 { text-align: center }
@@ -7,7 +14,7 @@ h1 { text-align: center }
   p { margin-left:100px }*/
 
 .main{
-  margin-left:400px;
+  margin-left:270px;
 }
 /*
 td {
