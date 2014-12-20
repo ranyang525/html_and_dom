@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>统一建模语言理论测试</title>
+
     <script type="text/javascript" src="js/question.js"></script>
     <script type="text/javascript" src="js/fillin.js"></script>
     <script type="text/javascript" src="js/single.js"></script>
@@ -29,18 +31,37 @@
       </div><br>
 
       <div class="row form-inline">
-      <label for="inputPassword" class="col-sm-4 control-label">班级：
+      <label for="className" class="col-sm-4 control-label">班级：
         <input type="text" class="form-control" id="className" placeholder="请输入班级"></label>
-      <label for="inputPassword" class="col-sm-4 control-label">学号：
+      <label for="studentNumber" class="col-sm-4 control-label">学号：
         <input type="text" class="form-control" id="studentNumber" placeholder="请输入学号"></label>
-      <label for="inputPassword" class="col-sm-4 control-label">姓名：
+      <label for="studentName" class="col-sm-4 control-label">姓名：
         <input type="text" class="form-control" id="studentName" placeholder="请输入姓名"></label>
       </div><br><br>
       <h3>一、填空题（每空 5 分，共 20 分）</h3>
-        <table class="table table-bordered">
-          <tr><td>1. UML 的中文全称是：<input type="text" name="1_1">。</td></tr>
-          <tr><td>2. 对象最突出的特征是：<input type="text" name="1_2" id="1_2_1">、<input type="text" name="1_2" id="1_2_2">、<input type="text" name="1_2" id="1_2_3">。</td></tr>
-        </table>
+      <div class="panel-body">
+        <ol>
+          <li>
+            <div class="form-group">
+              <label for="1_1" class="control-label">
+                UML的中文全称是：
+              </label>
+              <div class="form-inline">
+                <input type="text" id="1_1" name="1_1" class="form-control">
+              </div></div></li>
+
+          <li>
+            <div class="form-group">
+              <label for="1_2_1" class="control-label">
+                对象最突出的特征是：
+              </label>
+              <div class="form-inline">
+                <input type="text" id="1_2_1" name="1_2" class="form-control">
+                <input type="text" id="1_2_2" name="1_2" class="form-control">
+                <input type="text" id="1_2_3" name="1_2" class="form-control">
+              </div></div></li>
+        </ol>
+      </div>
           <h3>二、选择题（每题 10 分，共 20 分）</h3>
           <ol>
             <li><div class="form-group">
