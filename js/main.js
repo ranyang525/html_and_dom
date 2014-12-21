@@ -16,8 +16,8 @@ function getScores() {
   new Single('A','2_2'),
   new Multiple('ABD','3_1'),
   new Multiple('ABC','3_2'),
-  new Estimate('no','4_1'),
-  new Estimate('yes','4_2'),
+  new Estimate('X','4_1'),
+  new Estimate('V','4_2'),
   new ShortAnswer('模型是对现实世界的简化和抽象,模型是对所研究的系统、过程、事物或概念的一种表达形式。可以是物理实体;可以是某种图形;或者是一种数学表达式。','5_1')
   ];
   _.forEach(answers,function(answer){
