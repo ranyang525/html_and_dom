@@ -31,7 +31,8 @@ function HasEmptyRequiredInput() {
   var information = ["班级","学号","姓名"];
 
   for (var i = 0; i < personInfos.length; i++) {
-    var personInfo = document.getElementById(personInfos[i]).value;
+    //var personInfo = document.getElementById(personInfos[i]).value;
+    var personInfo = $('#'+personInfos[i]).val();
 
     if (personInfo === "") {
       alert("请输入:" + information[i] + "!");
