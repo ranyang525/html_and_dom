@@ -8,11 +8,11 @@ Estimate.prototype.constructor = Estimate;
 
 Estimate.prototype.getScore = function() {
   var score = 0;
-  var estimate = document.getElementsByName(this.identifier);
-  for (var i = 0; i < estimate.length; i++) {
-    if (estimate[i].checked === true && this.answer === estimate[i].value) {
-      score = 10;
-    }
-  }
-  return score;
+  var estimates = document.getElementsByName(this.identifier);
+
+  var estimate = _.find(estimates,{checked:true});
+
+  var value = estimate ? estimate.value : '';
+
+  return this.answer === value ? 10:0;
 };
