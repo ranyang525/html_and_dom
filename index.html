@@ -38,18 +38,22 @@
       <label for="studentName" class="col-sm-4 control-label">姓名：
         <input type="text" class="form-control" id="studentName" placeholder="请输入姓名"></label>
       </div><br><br>
-      <h3>一、填空题（每空 5 分，共 20 分）</h3>
-      <div class="panel-body">
-        <ol>
-          <li>
-            <div class="form-group">
-              <label for="1_1" class="control-label">
-                UML的中文全称是：
-              </label>
-              <div class="form-inline">
-                <input type="text" id="1_1" name="1_1" class="form-control">
-              </div></div></li>
 
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3>一、填空题（每空 5 分，共 20 分）</h3>
+        </div>
+            <div class="panel-body">
+              <ol>
+                <li>
+                  <div class="form-group">
+                    <label for="1_1" class="control-label">
+                      UML的中文全称是：
+                    </label>
+                      <div class="form-inline">
+                        <input type="text" id="1_1" name="1_1" class="form-control">
+            </div>
+        </div></li>
           <li>
             <div class="form-group">
               <label for="1_2_1" class="control-label">
@@ -61,8 +65,10 @@
                 <input type="text" id="1_2_3" name="1_2" class="form-control">
               </div></div></li>
         </ol>
-      </div>
-          <h3>二、选择题（每题 10 分，共 20 分）</h3>
+      </div></div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3>二、选择题（每题 10 分，共 20 分）</h3></div>
           <ol>
             <li><div class="form-group">
               <h4>UML 与软件工程的关系是：</h4>
@@ -78,8 +84,10 @@
               <input type="radio" name="2_2" value="C" />(C)单继承和多继承都支持<br/>
               <input type="radio" name="2_2" value="D" />(D)单继承和多继承都不支持
             </div></li>
-          </ol>
-      <h3>三、多选题（每题 10 分，共 20 分）</h3>
+          </ol></div>
+      <div class="panel panel-default">
+          <div class="panel-heading">
+      <h3>三、多选题（每题 10 分，共 20 分）</h3></div>
       <ol>
         <li><div class="form-group">
           <h4>用例的粒度分为以下哪三种：</h4>
@@ -95,8 +103,10 @@
           <input type="checkbox" name="3_2" value="C">(C)操作(Operation)<br/>
           <input type="checkbox" name="3_2" value="D">(D)方法（Function）
         </div></li>
-      </ol>
-      <h3>四、判断题（每题 10 分，共 20 分）</h3>
+      </ol></div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+      <h3>四、判断题（每题 10 分，共 20 分）</h3></div>
       <ol>
         <li>用例图只是用于和客户交流和沟通的，用于确定需求。 <input type="radio" name="4_1" value="V"/>
                                                        <span class="glyphicon glyphicon-ok text-success"></span>
@@ -108,15 +118,19 @@
                                                           <input type="radio" name="4_2" value="X" />
                                                           <span class="glyphicon glyphicon-remove text-danger"></span>
           </li>
-      </ol>
-      <h3>五、简答题（每题 20 分，共 20 分）</h3>
+      </ol></div>
+      <div class="panel panel-default">
+      <div class="panel-heading">
+      <h3>五、简答题（每题 20 分，共 20 分）</h3></div>
+      <div class="panel-body">
       <div class="row form-group">
         <label for="5_1" class="col-sm-5 control-label">
         <h4>1.简述什么是模型以及模型的表现形式?</h4></label>
           <textarea rows="5" class="form-control" id='5_1'></textarea>
-      </div>
+      </div></div></div>
       <div class="text-center">
-        <button type="submit" class="btn btn-danger" onclick="return clickbox()">提交</button>
+        <button type="submit" class="btn btn-danger" onclick="return clickbox()">
+          <span class="glyphicon glyphicon-star"></span>提交</button>
       </div>
     </div>
   </body>
